@@ -16,7 +16,7 @@ jobs:
           - name: Windows
             os: windows-2022
             buildArgs: windows
-            artifactName: P-Slice.1.0.windows
+            artifactName: Melody.1.0.windows
             setupScript: .\"setup/windows.bat"
             artifactPath: export\release\windows\bin\*
           - name: Linux
@@ -35,7 +35,7 @@ jobs:
             os: macos-15
             buildArgs: mac
             setupScript: sh ./setup/mobile.sh
-            artifactName: P-Slice.1.0.macosarm64
+            artifactName: Melidy.1.0.macosarm64
             artifactPath: export/release/macos/bin/*
     uses: ./.github/workflows/build.yml
     with:
