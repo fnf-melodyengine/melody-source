@@ -4,10 +4,12 @@ package mikolka.vslice;
 import funkin.graphics.video.FlxVideo;
 #else
 import mikolka.compatibility.ModsHelper;
-#if hxCodec
+#if hxCodec && !32bits
 import hxcodec.flixel.FlxVideoSprite;
 #else
+#if !32bits
 import hxvlc.flixel.FlxVideoSprite;
+#end
 #end
 using mikolka.funkin.utils.ArrayTools;
 #end
